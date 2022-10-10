@@ -1,0 +1,28 @@
+<h5>Criar/Editar Aluno</h5>
+
+
+<div class="form-group">
+    <div class="col">
+        <label for="disabled" class="active">#</label>
+    </div>
+    <div class="col-12">
+        <input disabled [(ngModel)]="aluno.id" id="disabled" type="text">
+    </div>
+</div>
+<div class="form-group">
+    <div class="col">
+        <label for="nome" class="active">Nome</label>
+    </div>
+    <div class="col-12">
+        <input id="nome" [(ngModel)]="aluno.nome" class="validate" (input)="onInput()">
+    </div>
+</div>
+<div class="form-group">
+    <div class="col">
+        <label for="email" class="active">Email</label>
+    </div>
+    <div class="col-12">
+        <input id="email" [(ngModel)]="aluno.email" class="validate">
+    </div>
+</div>
+<button type="submit" class="btn btn-primary">Salvar</button>
